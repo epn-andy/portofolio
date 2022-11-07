@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="cupcake" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -29,25 +29,22 @@
                         class="lg:shadow-none lg:rounded-none hidden absolute py-5 bg-base shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home"
-                                    class="text-base text-neutral py-2 mx-4 flex group-hover:bg-base-200 p-4 rounded-2xl active:bg-primary-focus">Home</a>
+                                <a href="#home" class="text-base text-neutral py-2 mx-4 flex btn btn-ghost">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about"
-                                    class="text-base text-neutral py-2 mx-4 flex group-hover:bg-base-200 p-4 rounded-2xl">About
+                                <a href="#about" class="text-base text-neutral py-2 mx-4 flex btn btn-ghost">About
                                     Me</a>
                             </li>
                             <li class="group">
                                 <a href="#experience"
-                                    class="text-base text-neutral py-2 mx-4 flex group-hover:bg-base-200 p-4 rounded-2xl">Experience</a>
+                                    class="text-base text-neutral py-2 mx-4 flex btn btn-ghost">Experience</a>
                             </li>
                             <li class="group">
                                 <a href="#portofolio"
-                                    class="text-base text-neutral py-2 mx-4 flex group-hover:bg-base-200 p-4 rounded-2xl">Portofolios</a>
+                                    class="text-base text-neutral py-2 mx-4 flex btn btn-ghost">Portofolios</a>
                             </li>
                             <li class="group">
-                                <a href="#contact"
-                                    class="text-base text-neutral py-2 mx-4 flex group-hover:bg-base-200 p-4 rounded-2xl">Contact
+                                <a href="#contact" class="text-base text-neutral py-2 mx-4 flex btn btn-ghost">Contact
                                     Me</a>
                             </li>
                         </ul>
@@ -65,8 +62,8 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Hi <span
-                            class="animate-waving-hand mb-2">👋</span><span
-                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Eryandhi Putro
+                            class="wave mb-2">👋</span>, <span class="text-neutral">I am</span><span
+                            class="block font-bold text-neutral text-4xl mt-1 lg:text-5xl">Eryandhi Putro
                             Nugroho</span></h1>
                     <h2 class="font-medium text-slate-700 text-lg mt-1 mb-5 lg:text-2xl">Programmer & <span
                             class="text-dark">Tech
@@ -81,7 +78,14 @@
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
                         <img src="dist/img/eryandhi.png" alt="Eryandhi Putro Nugroho"
-                            class="max-w-full mx-auto rounded-sm" />
+                            class="relative max-w-full mx-auto rounded-sm z-10" />
+                        <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-20 lg:scale-100 lg:-bottom-8">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#40ABB0"
+                                    d="M64.6,-37.6C78.5,-13.3,80.9,17.4,68.2,41C55.5,64.6,27.8,81,-0.1,81.1C-27.9,81.1,-55.8,64.7,-69.3,40.6C-82.8,16.6,-82,-15.1,-68,-39.5C-54.1,-63.9,-27,-81.1,-0.8,-80.6C25.4,-80.1,50.7,-62,64.6,-37.6Z"
+                                    transform="translate(100 100)" />
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -135,9 +139,8 @@
                             </div>
                             <time class="mb-1 text-md font-semibold leading-none text-">September
                                 2017 - January 2018</time>
-                            <h3 class="text-lg font-semibold text-gray-900 lg:text-xl"><mark
-                                    class="bg-transparent">Master
-                                    Computer Ponorogo</mark></h3>
+                            <h3 class="text-lg font-semibold text-gray-900 lg:text-xl">Master
+                                Computer Ponorogo</h3>
                             <p class="pt-2 text-base font-normal text-basecontent">I have done
                                 internship at this company, as a shop assistant by serving buying and selling computer
                                 or laptop spare parts, servicing laptops and computers as well as installing CCTV and
@@ -214,12 +217,12 @@
             <div class="w-full px-4 flex flex-wrap justify-center xl:mx-auto">
                 <div class="mb-12 p-4 shadow-xl bg-base-100 rounded-2xl md:w-5/12 w-full xl:mr-4 lg:mr-4 md:mr-4 mr-0">
                     <div class="rounded-xl overflow-hidden">
-                        <img src="dist/img/p1.jpg" alt="sistem deteksi kerusakan permukaan jalan aspal" class="w-full">
+                        <img src="dist/img/p1.png" alt="sistem deteksi kerusakan permukaan jalan aspal" class="w-full">
                     </div>
                     <div class="flex flex-wrap justify-between items-center">
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Automata</h3>
                         <p>
-                            <a href="https://github.com/3ryand/road-damage-detection" target="_blank"
+                            <a href="https://github.com/epn-andy/road-damage-detection" target="_blank"
                                 class="-mr-1 flex h-9 w-9"><svg role="img" width="20" class="fill-current"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub Repository</title>
@@ -238,12 +241,12 @@
                 </div>
                 <div class="mb-12 p-4 bg-base-100 shadow-xl rounded-xl md:w-5/12 w-full">
                     <div class="rounded-xl overflow-hidden">
-                        <img src="dist/img/p22.png" alt="sistem deteksi kerusakan permukaan jalan aspal" class="w-full">
+                        <img src="dist/img/p2.png" alt="sistem deteksi kerusakan permukaan jalan aspal" class="w-full">
                     </div>
                     <div class="flex flex-wrap justify-between items-center">
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Automata Web</h3>
                         <p class="flex justify-center items-center">
-                            <a href="https://github.com/3ryand/web-pemetaan-kerusakan-permukaan-jalan-aspal"
+                            <a href="https://github.com/epn-andy/web-pemetaan-kerusakan-permukaan-jalan-aspal"
                                 target="_blank" class="-mr-1 flex h-9 w-9"><svg role="img" width="20"
                                     class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub Repository</title>
@@ -271,7 +274,7 @@
                     <div class="flex flex-wrap justify-between items-center">
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Smart Trash IoT</h3>
                         <p>
-                            <a href="https://github.com/3ryand/smart-trash-iot" target="_blank"
+                            <a href="https://github.com/epn-andy/smart-trash-iot" target="_blank"
                                 class="-mr-1 flex h-9 w-9"><svg role="img" width="20" class="fill-current"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub Repository</title>
@@ -293,7 +296,7 @@
                     <div class="flex flex-wrap justify-between items-center">
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">PPE Detection</h3>
                         <p>
-                            <a href="https://github.com/3ryand/deteksi-kelengkapan-apd-tambang" target="_blank"
+                            <a href="https://github.com/epn-andy/deteksi-kelengkapan-apd-tambang" target="_blank"
                                 class="-mr-1 flex h-9 w-9"><svg role="img" width="20" class="fill-current"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub Repository</title>
@@ -355,8 +358,8 @@
                             </a>
                         </p>
                     </div>
-                    <p class="font-medium text-base text-base-content">Website Automata as a complement to the detection
-                        system, namely as a website-based automatic mapping system that uses the GMaps API, JS and PHP.
+                    <p class="font-medium text-base text-base-content">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Porro veniam vero natus.
                     </p>
                 </div>
             </div>
@@ -367,33 +370,41 @@
     <!-- contact start -->
     <section id="contact" class="pt-36 pb-32">
         <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h2 class="font-bold text-base-content text-3xl mb-4">Contact</h2>
-                    <p class="font-medium text-md text-secondary italic">Note : if you have any suggest and criticism
-                        please contact me!</p>
+            <div class="lg:flex lg:justify-between md:flex md:justify-center md:items-center">
+                <div>
+                    <div class="w-full px-4">
+                        <div class="max-w-xl mx-auto text-center mb-16">
+                            <h2 class="font-bold text-base-content text-3xl mb-4">Contact</h2>
+                            <p class="font-medium text-md text-secondary italic">Note : if you have any suggest and
+                                criticism
+                                please contact me!</p>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/f/moqbpgkp" method="POST">
+                        <div class="w-full lg:mx-auto">
+                            <div class="w-full px-4 mb-4">
+                                <input type="text" id="name" placeholder="Name" name="name"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                            </div>
+                            <div class="w-full px-4 mb-4">
+                                <input type="text" id="email" placeholder="Email" name="email"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                            </div>
+                            <div class="w-full px-4 mb-4">
+                                <textarea type="message" id="message" placeholder="Type message here" name="message"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                            </div>
+                            <div class="w-full px-4">
+                                <button
+                                    class="w-full btn py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-500">SEND</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="justify-self-end items-center">
+                    <img src="dist/img/EMAIL-OUTREACH-IMAGE.png" alt="Email Outreach Image">
                 </div>
             </div>
-            <form action="https://formspree.io/f/moqbpgkp" method="POST">
-                <div class="w-full lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-4">
-                        <input type="text" id="name" placeholder="Name" name="name"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
-                    </div>
-                    <div class="w-full px-4 mb-4">
-                        <input type="text" id="email" placeholder="Email" name="email"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
-                    </div>
-                    <div class="w-full px-4 mb-4">
-                        <textarea type="message" id="message" placeholder="Type message here" name="message"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button
-                            class="w-full btn py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-500">SEND</button>
-                    </div>
-                </div>
-            </form>
         </div>
     </section>
     <!-- contact end -->
@@ -413,7 +424,7 @@
         </div>
         <div class="flex md:justify-self-end justify-self-center">
             <!-- Github -->
-            <a href="https://github.com/3ryand" target="_blank"
+            <a href="https://github.com/epn-andy" target="_blank"
                 class="mr-1 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-base-100 hover:bg-base-300 hover:text-neutral">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>GitHub</title>

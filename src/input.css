@@ -7,7 +7,13 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-70;
+  @apply fixed z-[9999] bg-base-300 bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-fixed2 {
+  @apply fixed z-[9999] bg-base-100 bg-opacity-70;
   backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
@@ -28,23 +34,37 @@ body {
   @apply -rotate-45;
 }
 
-mark:hover {
-  --color1: springgreen;
-  --color2: springgreen;
-  --bg-height: 40%;
-
-  all: unset;
-  background-image: linear-gradient(var(--color1), var(--color2));
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 0 var(--bg-height);
-  animation: highlight 1800ms 1 ease-out;
-  animation-fill-mode: forwards;
-  animation-play-state: play;
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
-@keyframes highlight {
-  to {
-    background-size: 100% var(--bg-height);
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
   }
 }
